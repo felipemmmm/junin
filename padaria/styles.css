@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    cursor: crosshair;
-}
-
 body{
     background-color: #f1f1f1;
     text-align: center;
@@ -17,20 +13,27 @@ body{
 .menu_container{
     width: 100%;
     padding: 15px;
-    background-color: #55eb;
+    background-color: rgb(252, 249, 63);
 
 }
 .nav_container{
     display: flex;
     justify-content: space-between;
     text-align: center;
+    flex-direction: column;
+
 }
 
 .logo{
+
     float: left;
     padding: 15px;
 }
 
+img {
+    width: 50px;
+    padding-bottom: 20px;
+}
 .list_container{
     justify-content: space-between;
     display: flex;
@@ -45,11 +48,11 @@ body{
 
 .list_item a {
     text-decoration: none;
-    color: #f1f1f1;
+    color: #030303;
 }
 
 .list_item a:hover{
-    cursor: not-allowed;
+    cursor: pointer;
     color: rgba(46, 46, 241, 0.733);
 }
 
@@ -77,5 +80,10 @@ body{
         flex-direction: column;
         align-items: self-start;
     }
+
+    #logotext {
+        font-size: 50px;
+    }
+
 
 }
