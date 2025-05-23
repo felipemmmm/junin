@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contatoStyle.css">
+    <script src="../script/script.js"> </script>
+</head>
+<body>
+    
+    <header class="menu_container">
+        <nav class="nav_container">
+            <div class="logo">Logo</div>
+
+            <div class="sandwish_menu" id="sandwish_menu">&#9776</div>
+
+            <ul class=" list_container">
+                <li class="list_item"><a>Salgados</a></li>
+                <li class="list_item"><a>Encomendas</a></li>
+                <li class="list_item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2> Contato </h2>
+
+    <form onsubmit="send_message(); return false;">
+        <label for="name">Nome: </label>
+        <input type="text" id="name" class="input_name" required>
+        <br><br>
+    
+        <label for="surname">Sobrenome: </label>
+        <input type="text" id="surname" class="input_surname" required>
+        <br><br>
+    
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" class="input_email" required>
+        <br><br>
+    
+        <textarea id="message" required placeholder="Mensagem..." rows="5"></textarea>
+        <br><br>
+    
+        <button type="submit">Enviar</button>
+        <br><br>
+
+        <p id="teste"> </p>
+    </form>
+
+    <footer class="footer_container">
+        <table class="footer_menu">
+            <tr class="menu_item">
+                <td><a class="footer_link" href="#">Salgados</a></td>
+            </tr>
+            <tr class="menu_item">
+                <td><a class="footer_link" href="#">Encomendas</a></td>
+            </tr>
+            <tr class="menu_item">
+                <td><a class="footer_link" href="contato.html">Contato</a></td>
+            </tr>
+            <tr class="menu_item">
+                <td><a class="footer_link" href="#">Direito do consumidor</a></td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
